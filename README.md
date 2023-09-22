@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Page</title>
+    <style>
+        @keyframes flowerAnimation {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .flower {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            animation: flowerAnimation 2s linear infinite;
+        }
+
+        .message {
+            text-align: center;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-top: 50px;
+        }
+
+        .heartbeat {
+            animation: heartbeat 1s linear infinite;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="flower"></div>
+    <div class="flower" style="top: 100px; left: 100px;"></div>
+    <div class="flower" style="top: 200px; left: 200px;"></div>
+    <div class="flower" style="top: 300px; left: 300px;"></div>
+    <div class="message">
+        POR ALGO SOY PROGRAMADOR<br>
+        TE AMO<br>
+        <span class="heartbeat">❤️</span>
+    </div>
+</body>
+</html>
